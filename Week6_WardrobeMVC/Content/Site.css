@@ -1,4 +1,13 @@
-﻿body {
+﻿/*#D90000
+font-family: 'Stoke', serif;
+font-family: 'Libre Baskerville', serif;*/
+
+
+* {
+    font-family: 'Libre Baskerville', serif;
+}
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -21,4 +30,48 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.navbar {
+    font-family: 'Stoke', serif;
+    font-size: 24px;
+    color: #031927;
+    font-weight:300;
+    background-color: #D90000; 
+}
+
+a.navbar-brand {
+    color: #031927;
+    word-spacing: unset;
+}
+
+.jumbotron {
+    font-family: 'Stoke', serif;
+    background-color: #FFFFFF;
+}
+
+.jumbotron>h1 {
+    font-size: 56px;
+    font-family: 'Stoke', serif;
+    text-align: center;
+}
+
+.jumbotron>p {
+    font-size: 28px;
+    text-align: center;
+}
+.jumbotron>img {
+    width: 800px;
+    height: 300px;
+    align-content: center;
+    margin-left: 100px;
+}
+
+a {
+    color: #031927;
+}
+
+.tagline {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 34px;
 }

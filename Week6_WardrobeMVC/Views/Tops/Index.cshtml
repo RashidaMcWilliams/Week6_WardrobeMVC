@@ -1,15 +1,35 @@
 ﻿@model IEnumerable<Week6_WardrobeMVC.Top>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = " Kits Index";
 }
 
-<h2>Index</h2>
+<h2>Kits Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Show Me Your Kit", "Create")
 </p>
-<table class="table">
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+
+                <div class="caption">
+                    <h3>@Html.DisplayFor(modelItem => item.TopsName)</h3>
+                    <h4>@Html.DisplayFor(modelItem => item.TopsType)</h4>
+                    <p>@Html.DisplayFor(modelItem => item.TopsPhoto)</p>
+                    <p>>@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
+
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.TopsName)
@@ -60,4 +80,4 @@
     </tr>
 }
 
-</table>
+</table>*@
